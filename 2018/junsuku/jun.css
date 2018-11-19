@@ -3,6 +3,10 @@
      font-family: "segoe ui",meiryo,"yu gothic","hiragino kaku gothic pron",sans-serif;
 }
 
+body{
+    margin: 0;
+}
+
 .top{
     background: rgba(0,0,0,0.6);
     color: white;
