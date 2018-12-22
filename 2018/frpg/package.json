@@ -1,0 +1,24 @@
+{
+  "name": "misw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "babel src/main.js src/article.js --presets \"@babel/preset-env\" -d babel_dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oguni-yoshihiro/giftest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oguni-yoshihiro/giftest/issues"
+  },
+  "homepage": "https://github.com/oguni-yoshihiro/giftest#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3"
+  }
+}

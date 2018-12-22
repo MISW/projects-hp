@@ -1,0 +1,114 @@
+.scale-when-hover {
+    transition-property: transform;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0;
+}
+
+.scale-when-hover:hover {
+    transform: scale(1.009, 1.009);
+}
+
+#sidebar {
+    background: url(../img/home.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#sidebar li {
+    background: rgba(53, 26, 14, 0.8);
+    margin-bottom: 10px;
+
+    color: white;
+    border: 3px solid white;
+    border-radius: 5px;
+
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    cursor: pointer;
+}
+
+#sidebar li a {
+    color: white;
+}
+
+#sidebar #sidebar-title {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#content {
+    padding: 30px;
+
+    background: url(../img/prairie.gif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#content-title-image {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 60px;
+    filter: drop-shadow(0px 0px 4px rgba(53, 26, 14, 0.8));
+
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.sidebar-item {
+    transition-duration: 140ms;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.sidebar-item:hover {
+    background:  rgba(168, 82, 45, 0.8);
+}
+
+.sidebar-item:active {
+    background:  rgba(245, 159, 122, 0.8);
+}
+
+#article {
+    transition-duration: 60ms;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.card {
+    transform: translate(0px, 0px);
+    padding: 20px 50px 50px 50px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    filter: drop-shadow(0px 0px 4px rgba(53, 26, 14, 0.8));
+
+    transition-property: opacity, transform;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0;
+    opacity: unset;
+}
+
+.card.card-preload {
+    transform: translate(0px, -50px);
+    opacity: 0;
+}
+
+::selection {
+    background:rgba(221, 194, 182, 0.8);
+}
+::-moz-selection {
+    background:rgba(221, 194, 182, 0.8);
+}
