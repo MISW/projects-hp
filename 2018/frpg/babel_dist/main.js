@@ -14,6 +14,7 @@
       } else {
         document.querySelector("#article").innerHTML = "<div class=\"card card-preload scale-when-hover markdown-body\">" + marked(article[selector]) + "</div>";
         document.body.offsetWidth; // 強制的にレンダリング
+        // IE対応のためのslice.call
 
         Array.prototype.slice.call(document.querySelectorAll(".card-preload"), 0).forEach(function (el) {
           el.classList.remove("card-preload");
