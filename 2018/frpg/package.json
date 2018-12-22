@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build": "babel src/main.js src/article.js --presets \"@babel/preset-env\" -d babel_dist"
+    "build": "babel src/main.js src/article.js -s true --presets \"@babel/preset-env\" -d babel_dist",
+    "watch": "babel src/main.js src/article.js -w -s true --presets \"@babel/preset-env\" -d babel_dist"
   },
   "author": "",
   "license": "ISC",

@@ -1,7 +1,8 @@
 "use strict";
 
 {
-  var links = ["top_page", "manual", "get_lost", "distribution", "about", "contact"];
+  var links = ["top_page", "manual", "get_lost", "distribution", "about", "contact"]; // 各ページ移動ボタンのクリックイベント
+
   links.forEach(function (selector) {
     document.querySelector("#" + selector).addEventListener("click", function () {
       if (typeof article[selector] !== "string") {
@@ -21,5 +22,15 @@
         });
       }
     });
-  });
+  }); // 背景読み込み
+
+  var secondImage = "./img/home_prairie.gif";
+  var img = new Image();
+
+  img.onload = function () {
+    document.querySelector("#content").style.backgroundImage = "url(".concat(secondImage, ")");
+  };
+
+  img.src = secondImage;
 }
+//# sourceMappingURL=main.js.map

@@ -8,6 +8,7 @@
         "contact"
     ];
 
+    // 各ページ移動ボタンのクリックイベント
     links.forEach((selector) => {
         document.querySelector("#" + selector).addEventListener("click", () => {
             if (typeof article[selector] !== "string") {
@@ -27,4 +28,12 @@
             }
         });
     });
+
+    // 背景読み込み
+    const secondImage = "./img/home_prairie.gif";
+    const img = new Image();
+    img.onload = () => {
+        document.querySelector("#content").style.backgroundImage = `url(${secondImage})`;
+    };
+    img.src = secondImage;
 }
