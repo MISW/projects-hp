@@ -124,7 +124,7 @@
 .card {
     transform: translate(0px, 0px);
     padding: 8px 20px 20px 20px;
-    background: rgba(255, 255, 255, 0.95);
+    background: white;
     border-radius: 8px;
     filter: drop-shadow(0px 0px 4px rgba(53, 26, 14, 0.8));
 
