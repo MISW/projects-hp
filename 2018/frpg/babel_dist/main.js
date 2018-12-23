@@ -6,7 +6,6 @@
     var id = sidebarItem.id;
     sidebarItem.addEventListener("click", function () {
       if (typeof article[id] !== "string") {
-        console.error("typeof article[selector] !== \"string\"");
         return;
       }
 
