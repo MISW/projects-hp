@@ -81,7 +81,11 @@
     background-size: cover;
     min-height: 135vh;
 }
-
+@media screen and (min-width: 768px) {
+    #content {
+        min-height: 100vh;
+    }
+}
 #content-title-image {
     width: 100%;
     max-width: 500px;
