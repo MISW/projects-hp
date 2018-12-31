@@ -1,12 +1,12 @@
 
-const article = {};
+const articles = {};
 
 
-article.top_page = `
+articles.top_page = `
 `;
 
 
-article.manual = `
+articles.manual = `
 # 説明書
 ## 起動方法
 - インストーラーを起動して指示に従って進めると、インストールできます。
@@ -29,19 +29,19 @@ article.manual = `
 `;
 
 
-article.get_lost = `
+articles.get_lost = `
 # ゲームに迷ったら
 家にいる親父に話しかけよう。アドバイスがもらえるよ。
 `;
 
 
-article.distribution = `
+articles.distribution = `
 # 配布
 配布場所はまだ決まっていません。
 `;
 
 
-article.about = `
+articles.about = `
 # この企画について
 これはMIS.W (早稲田大学経営情報学会）の2018年ファミコン風RPG企画の作品です。
 
@@ -72,7 +72,7 @@ article.about = `
 `;
 
 
-article.contact = `
+articles.contact = `
 # ご感想/バグ報告
 
 お名前
