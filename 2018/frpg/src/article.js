@@ -37,7 +37,7 @@ articles.get_lost = `
 
 articles.distribution = `
 # 配布
-配布場所はまだ決まっていません。
+コミックマーケット95で配布します。
 `;
 
 
