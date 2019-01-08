@@ -38,6 +38,32 @@ var sendNewPost
     forEach(document.querySelectorAll(".card-preload"), function (el) {
       el.classList.remove("card-preload");
     });
+  };
+
+  var showCard = function showCard(articleName
+  /*: string */
+  )
+  /*: string */
+  {
+    var articleMarkDown = articles[articleName];
+
+    if (typeof articleMarkDown !== "string" || /^\s*$/.test(articles[articleName])) {
+      document.querySelector("#article").innerHTML = "";
+      return "top_page";
+    } else {
+      showArticleCard(marked(articles[articleName].trim()));
+      return articleName;
+    }
+  }; // ページ移動
+
+
+  var transitPage = function transitPage(articleName
+  /*: string */
+  )
+  /*: void */
+  {
+    var newPage = showCard(articleName);
+    history.pushState(null, null, "?page=" + newPage);
   }; // 各ページ移動ボタンの実装
 
 
@@ -48,13 +74,8 @@ var sendNewPost
   {
     forEach(document.querySelectorAll(".sidebar-item"), function (sidebarItem) {
       var articleName = sidebarItem.id;
-      var articleMarkDown = articles[articleName];
       sidebarItem.addEventListener("click", function () {
-        if (typeof articleMarkDown !== "string" || /^\s*$/.test(articles[articleName])) {
-          document.querySelector("#article").innerHTML = "";
-        } else {
-          showArticleCard(marked(articles[articleName].trim()));
-        }
+        transitPage(articleName);
       });
     });
   };
@@ -139,6 +160,16 @@ var sendNewPost
     bodyEl.value = "";
   }; // main
 
+
+  var params = new URLSearchParams(location.search.slice(1));
+
+  if (params.has("page")) {
+    transitPage(params.get("page"));
+  }
+
+  window.onpopstate = function (e) {
+    showCard(new URLSearchParams(location.search.slice(1)).get("page"));
+  };
 
   setPageTransitionButtonEvent(
   /* window.*/
