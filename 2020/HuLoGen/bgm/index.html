@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="f()">click</button>
+    <script>
+        function f() {
+            console.log("A")
+            const a = new Audio("./EpilogueBGM_ver2_mp3_fade.mp3")
+            a.loop = true
+            a.volume = 0.2
+            // a.currentTime = 50
+            a.play()
+        }
+        // document.getElementById("audio").addEventListener("timeupdate", (ev) => {
+        //     /** @type {HTMLAudioElement} */
+        //     const el = ev.currentTarget
+        //     if (el.currentTime >= 86.016) {
+        //         el.currentTime = 0
+        //         el.play()
+        //     }
+        // })
+    </script>
+</body>
+</html>
