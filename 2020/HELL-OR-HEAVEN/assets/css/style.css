@@ -1512,7 +1512,6 @@ a:hover {
 .glitch__img {
     position: absolute;
     width: 80vw;
-    max-width: 960px;
     height: 80vh;
     background-image: url(../img/main-visual.png);
     background-size: cover;
@@ -1520,6 +1519,17 @@ a:hover {
     transform: scale3d(1.1, 1.1, 1.1);
     transition: all .4s;
 }
+
+@media screen and (max-width: 768px) {
+    .glitch {
+        width: 100vw;
+    }
+
+    .glitch__img {
+        width: 100vw;
+    }
+}
+
 
 .glitch__img:nth-child(n+2) {
     opacity: 0;
