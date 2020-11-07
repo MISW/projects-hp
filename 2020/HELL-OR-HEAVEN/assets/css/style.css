@@ -1523,10 +1523,13 @@ a:hover {
 @media screen and (max-width: 768px) {
     .glitch {
         width: 100vw;
+        height: 100vw;
+        margin-top: 20vh;
     }
 
     .glitch__img {
         width: 100vw;
+        height: 100vw;
     }
 }
 
