@@ -77,16 +77,3 @@ articles.about = `
 - ゲーム本体はC++でDXライブラリを使って作りました。
 - アップデーターにはGo言語を使用しています。
 `;
-
-
-articles.contact = `
-# ご感想/バグ報告
-
-お名前
-<input type="text" id="title_text" class="form-control" style="width: 100%;" value="匿名"><br>
-
-メッセージ
-<textarea id="body_text" class="form-control" style="width: 100%; height: 200px;"></textarea>
-<input id="submit_button" type="button" class="btn brn-primary" value="送信" onclick="sendNewPost()">
-`;
-
